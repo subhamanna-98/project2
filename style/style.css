@@ -381,6 +381,7 @@ nav,
   display: flex;
 
   align-items: center;
+ 
 }
 .hero-sub-right-wrpr > h1 {
   font-size: 140px;
@@ -1318,13 +1319,21 @@ nav,
   color: var(--primary-color);
 
 }
+@media screen and (max-width: 1900px){
+  .hero-right-wrpr > h1 {
+    font-size: 80px;
+}
+.hero-sub-right-wrpr > h1 {
+    font-size: 80px;
+}
+}
 @media screen and (max-width: 1600px) {
   .col-50 {
     width: 100% !important;
   }
-  /* .hero-sub-wrpr {
+  .hero-sub-wrpr {
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 9%;
   bottom: -9%;
 }
@@ -1350,7 +1359,7 @@ nav,
     color: var(--primary-color);
     margin-bottom: 20px;
     margin-top: 20px;
-} */
+}
 }
 @media screen and (max-width: 1400px) {
   /* navbar-sec */
@@ -1477,7 +1486,17 @@ nav,
 }
 @media screen and (max-width: 992px) {
   .hero-right-wrpr > h1 {
-    font-size: 114px;
+    font-size: 90px;
+  }
+  .hero-sub-right-wrpr > h1 {
+    font-size: 90px;
+  }
+  .hero-sub-right-wrpr > img {
+    width: 200px;
+    height: 20px;
+    object-fit: cover;
+    position: relative;
+    bottom: 20px;
   }
   .servics-sub-btm-img {
     max-width: 300px;
@@ -1512,6 +1531,22 @@ nav,
     font-size: 90px;
   }
 }
+@media screen  and (max-width:700px) {
+   .hero-right-wrpr > h1 {
+    font-size: 40px;
+  }
+  .hero-sub-right-wrpr > h1 {
+    font-size: 40px;
+  }
+  .hero-sub-right-wrpr > img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    position: relative;
+    bottom: 20px;
+  }
+
+}
 @media screen and (max-width: 576px) {
   .hero-right-wrpr > h1 {
     font-size: 60px;
@@ -1520,12 +1555,7 @@ nav,
     font-size: 60px;
     margin-bottom: 10px;
   }
-  .hero-sub-right-wrpr > img {
-    width: 130px;
-    height: 30px;
-    object-fit: cover;
-    margin-top: 10px;
-  }
+ 
 
   .form {
     display: none;
@@ -1601,9 +1631,11 @@ nav,
     font-size: 40px;
   }
   .hero-sub-right-wrpr > img {
-    width: 100px;
-    height: 20 px;
+    width: 70px;
+    height: 20px;
     object-fit: cover;
+    position: relative;
+    bottom: 20px;
   }
 
   .heroright-1 > p {
@@ -1932,5 +1964,11 @@ nav,
 }
 .choose-hdr-btm-img-1>img{
   display: none;
+}
+ .hero-sub-wrpr {
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  bottom: -9%;
 }
 }
