@@ -2,6 +2,10 @@
   font-family: Clash Display;
   src: url(../assets/font/ClashDisplay_Complete.url);
 }
+@font-face {
+  font-family:Akira Expanded ;
+  src: url(../assets/font/Akira\ Expanded\ Demo.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -237,7 +241,7 @@ nav,
   margin-left: 10px;
 }
 .close-btn {
-  display: flex;
+  display: none;
 }
 .over-lay {
   position: fixed;
@@ -376,6 +380,7 @@ nav,
   font-size: 140px;
   font-weight: 800;
   color: var(--primary-color);
+  font-family: "akira expanded", sans-serif;
 }
 .hero-sub-right-wrpr {
   display: flex;
@@ -387,6 +392,7 @@ nav,
   font-size: 140px;
   font-weight: 800;
   color: var(--tertary-color);
+  font-family: "akira expanded", sans-serif;
 }
 .hero-sub-right-wrpr > img {
   width: 200px;
@@ -550,6 +556,7 @@ nav,
   font-weight: 800;
   color: var(--primary-color);
   margin-right: 10px;
+  font-family: "akira expanded", sans-serif;
   position: relative;
 }
 .about-left-cntn > p::before {
@@ -640,6 +647,7 @@ nav,
   font-size: 27px;
   font-weight: 800;
   color: var(--primary-color);
+  font-family: "akira expanded", sans-serif;
   position: relative;
   margin-right: 10px;
 }
@@ -684,12 +692,13 @@ nav,
   font-size: 45px;
   font-weight: 400;
   color: var(--primary-color);
+  font-family: "akira expanded", sans-serif;
 }
 .servics-sub-btm-img{
-  max-width: 400px;
+  max-width: 300px;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 65%;
   transform: rotate(-6deg);
 }
 .servics-sub-btm-img>img{
@@ -723,6 +732,7 @@ nav,
   font-size: 28px;
   font-weight: 700;
   color: var(--primary-color);
+  font-family: "akira expanded", sans-serif;
   position: relative;
   margin-right: 10px;
 }
@@ -780,6 +790,7 @@ nav,
   margin-bottom: 22px;
   opacity: 90%;
   margin-top: 15px;
+  font-family: "akira expanded", sans-serif;
 }
 .about-gym-card-cntn > p {
   max-width: 350px;
@@ -805,6 +816,7 @@ nav,
   color: var(--primary-color);
   position: relative;
   margin-right: 10px;
+  font-family: "akira expanded", sans-serif;
 }
 .coaches-left-hdr > p::before {
   content: " ";
@@ -878,6 +890,7 @@ nav,
   font-size: 16px;
   font-weight: 800;
   color: var(--primary-color);
+  font-family: "akira expanded", sans-serif;
 }
 .coaches-card-cntn>p{
   font-size: 53px;
@@ -927,6 +940,7 @@ nav,
   color: var(--primary-color);
   position: relative;
   margin-right: 10px;
+  font-family: "akira expanded", sans-serif;
 }
 .choose-hdr-top-left > p::before {
   content: " ";
@@ -981,6 +995,7 @@ nav,
   color: var(--primary-color);
   margin-bottom: 10px;
   margin-top: 10px;
+  font-family: "akira expanded", sans-serif;
 }
 .choose-hdr-btm-card > p {
   font-size: 18px;
@@ -1064,6 +1079,7 @@ nav,
   color: var(--primary-color);
   position: relative;
   margin-right: 10px;
+  font-family: "akira expanded", sans-serif;
 }
 .location-top-hdr-cntn > p::before {
   content: "";
@@ -1161,13 +1177,14 @@ nav,
   text-transform: uppercase;
 }
 .transform-cntn > h2 {
-  max-width: 1000px;
+  max-width: 1900px;
   font-size: 77px;
   font-weight: 800;
   color: var(--tertary-color);
   text-align: center;
   margin-bottom: 50px;
   text-transform: uppercase;
+  font-family: "akira", sans-serif;
 }
 .transform-cntn-img {
   width: 77px;
@@ -1333,7 +1350,7 @@ nav,
   }
   .hero-sub-wrpr {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 9%;
   bottom: -9%;
 }
@@ -1359,6 +1376,38 @@ nav,
     color: var(--primary-color);
     margin-bottom: 20px;
     margin-top: 20px;
+}
+.about-left-cntn > P{
+  margin-left: 50px;
+}
+.secvics-top-hdr > h5 {
+  margin-left: 50px;
+}
+.about-gym-left-hdr > p{
+  margin-left: 50px;
+}
+.coaches-left-hdr> p{
+  margin-left: 50px;
+}
+.choose-hdr-top-left > p{
+  margin-left: 50px;
+}
+.location-top-hdr-cntn > p{
+  margin-left: 50px;
+}
+.transform-cntn > p {
+    font-size: 20px;
+}
+.transform-cntn > h2 {
+    max-width: 1900px;
+    font-size: 50px;
+}
+.servics-sub-btm-img {
+    max-width: 250px;
+    left: 60%;
+}
+.secvics-btm-hdr>p {
+    font-size: 30px;
 }
 }
 @media screen and (max-width: 1400px) {
@@ -1401,14 +1450,14 @@ nav,
     display: inline-block;
     width: 50px;
     height: 3px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     transition: all 0.5s linear;
   }
   .close-btn::before {
     content: " ";
     width: 50px;
     height: 3px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     position: absolute;
     right: 0px;
     top: 5px;
@@ -1418,7 +1467,7 @@ nav,
     content: " ";
     width: 50px;
     height: 3px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     position: absolute;
     right: 0px;
     bottom: -4px;
@@ -1483,26 +1532,55 @@ nav,
   .footer-btm-left {
     margin-bottom: 15px;
   }
+  .hero-right-wrpr > h1 {
+    font-size: 80px;
+}
+.hero-sub-right-wrpr > h1 {
+    font-size: 80px;
+}
+.hero-cntn > p {
+    max-width: 550px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.hero-sub-cntn > p {
+    max-width: 300px;
+    font-size: 29px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.transform-cntn > p {
+    font-size: 20px;
+}
+.transform-cntn > h2 {
+    max-width: 1900px;
+    font-size: 50px;
+}
+    .secvics-btm-hdr>p {
+        font-size: 24px;
+    }
 }
 @media screen and (max-width: 992px) {
   .hero-right-wrpr > h1 {
-    font-size: 90px;
+    font-size: 60px;
   }
   .hero-sub-right-wrpr > h1 {
-    font-size: 90px;
+    font-size: 60px;
   }
   .hero-sub-right-wrpr > img {
-    width: 200px;
-    height: 20px;
+    width: 150px;
+    height: 30px;
     object-fit: cover;
     position: relative;
     bottom: 20px;
   }
   .servics-sub-btm-img {
-    max-width: 300px;
+    max-width: 250px;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 45%;
     transform: rotate(-6deg) translateX(50px);
 }
 .servics-sub-btm-img>img{
@@ -1510,25 +1588,26 @@ nav,
   height: 100%;
   object-fit: cover;
 }
+.transform-cntn > p {
+    font-size: 20px;
+}
+.transform-cntn > h2 {
+    max-width: 1900px;
+    font-size: 50px;
+}
 }
 @media screen and (max-width: 768px) {
   .hero-right-wrpr > h1 {
-    font-size: 120px;
+    font-size: 50px;
   }
   .hero-sub-right-wrpr > h1 {
-    font-size: 120px;
+    font-size: 50px;
   }
   .hero-sub-right-wrpr > img {
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     object-fit: cover;
     margin-top: 40px;
-  }
-  .hero-right-wrpr > h1 {
-    font-size: 90px;
-  }
-  .hero-sub-right-wrpr > h1 {
-    font-size: 90px;
   }
 }
 @media screen  and (max-width:700px) {
@@ -1548,14 +1627,6 @@ nav,
 
 }
 @media screen and (max-width: 576px) {
-  .hero-right-wrpr > h1 {
-    font-size: 60px;
-  }
-  .hero-sub-right-wrpr > h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-  }
- 
 
   .form {
     display: none;
@@ -1625,14 +1696,14 @@ nav,
     object-fit: cover;
   }
   .hero-right-wrpr > h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .hero-sub-right-wrpr > h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .hero-sub-right-wrpr > img {
-    width: 70px;
-    height: 20px;
+    width: 50px;
+    height: 10px;
     object-fit: cover;
     position: relative;
     bottom: 20px;
@@ -1744,7 +1815,7 @@ nav,
     margin-bottom: 30px;
   }
   .about-left-cntn > P {
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 600;
     margin-right: 10px;
   }
@@ -1768,7 +1839,7 @@ nav,
     margin-left: 40px;
   }
   .about-gym-left-hdr > p {
-    font-size: 24px;
+    font-size: 15px;
     margin-right: 4px;
   }
   .about-gym-img {
@@ -1789,7 +1860,7 @@ nav,
     top: ;
   }
   .coaches-left-hdr > p {
-    font-size: 16px;
+    font-size: 11px;
   }
   .coaches-left-img{
     width: 50px;
@@ -1817,7 +1888,7 @@ nav,
     margin-bottom: 30px;
   }
   .choose-hdr-top-left > p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .choose-hdr-top-img {
     width: 50px;
@@ -1832,7 +1903,7 @@ nav,
     margin-left: 40px;
   }
   .location-top-hdr-cntn > p {
-    font-size: 23px;
+    font-size: 21px;
   }
   .location-top-img {
     width: 50px;
@@ -1895,11 +1966,18 @@ nav,
     left: 50%;
     transform: rotate(-6deg) translateX(20px);
 }
+.servics-sub-btm-img {
+        max-width: 72px;
+        left: 60%;
+}
 .servics-sub-btm-img>img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+    .secvics-btm-hdr>p {
+        font-size: 12px;
+    }
 .servics-btm-icon>img{
   width: 20px;
   height: 24px;
@@ -1927,8 +2005,8 @@ nav,
 }
 
 .coaches-card {
-    max-width: 603px;
-    height: 500px;
+    max-width: 540px;
+    height: 440px;
     padding: 8px;
 }
 .coaches-img {
@@ -1970,5 +2048,33 @@ nav,
   top: 30%;
   left: 9%;
   bottom: -9%;
+}
+.about-left-cntn > P{
+  margin-left: 10px;
+}
+.secvics-top-hdr > h5 {
+  margin-left: 10px;
+}
+.about-gym-left-hdr > p{
+  margin-left: 5px;
+}
+.about-gym-left-hdr > p::after {
+    top: -44%;
+    left: -45px;
+}
+.coaches-left-hdr> p{
+  margin-left: 10px;
+}
+.coaches-left-hdr > p::before {
+    top: -91%;
+}
+.choose-hdr-top-left > p{
+  margin-left: 10px;
+}
+.choose-hdr-top-left > p::before {
+    top: -59%;
+}
+.location-top-hdr-cntn > p{
+  margin-left: 10px;
 }
 }
