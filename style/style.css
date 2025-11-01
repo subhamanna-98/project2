@@ -1322,6 +1322,35 @@ nav,
   .col-50 {
     width: 100% !important;
   }
+  /* .hero-sub-wrpr {
+  position: absolute;
+  top: 20%;
+  left: 9%;
+  bottom: -9%;
+}
+.hero-row{
+  display: flex;
+  align-items: center;
+}
+.hero-right-wrpr > h1 {
+    font-size: 110px;
+}
+.hero-sub-right-wrpr > h1 {
+    font-size: 110px;
+}
+.hero-cntn > p {
+    max-width: 550px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.hero-sub-cntn > p {
+    max-width: 300px;
+    font-size: 29px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+} */
 }
 @media screen and (max-width: 1400px) {
   /* navbar-sec */
