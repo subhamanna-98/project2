@@ -1032,7 +1032,7 @@ nav,
   margin-left: 10px;
 }
 .choose-hdr-btm-img-1 > img {
-  transform: rotate(90deg) translateY(-90px);
+  transform: rotate(90deg) translateX(70px) translateY(-90px);
 }
 .member-btm-1 {
   max-width: 543px;
