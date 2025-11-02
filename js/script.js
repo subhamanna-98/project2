@@ -38,7 +38,7 @@ closeBtn.addEventListener("click", () =>{
         1700:{
              slidesPerView: 3,
         },
-    1470: {
+    1400: {
       slidesPerView: 2,
     },
     992: {
