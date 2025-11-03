@@ -1503,16 +1503,28 @@ nav,
   .spon-top-hdr {
     margin-left: 60px;
   }
-}
-@media screen and (max-width: 1500px) {
-  .work-btm-img {
-    margin-left: 211px;
+   .work-btm-img {
+    margin-left: 215px;
   }
   .work-btm-sub-img {
     margin-left: 216px;
   }
   .work-btm-img-1 {
     margin-left: 213px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .work-btm-img {
+    margin-left: 192px;
+  }
+  .work-btm-left > h5{
+    margin-left: -13px !important;
+  }
+  .work-btm-sub-img {
+    margin-left: 200px;
+  }
+  .work-btm-img-1 {
+    margin-left: 197px;
   }
 }
 
